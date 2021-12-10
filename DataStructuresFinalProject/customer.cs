@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructuresFinalProject
 {
-    class customer
+    public class customer
     {
         //fields
         private string companyName;
@@ -18,7 +18,7 @@ namespace DataStructuresFinalProject
         private int currCustomerNum;
 
         //array to hold the customers
-        private static customer[] custArray = new customer[100000];
+        public static customer[] custArray = new customer[1000];
         public static int indexForArray = 0;
 
         //constructors
@@ -82,6 +82,24 @@ namespace DataStructuresFinalProject
             tempInt = myCustomer.currCustomerNum;
 
             return tempInt;
+        }
+
+        public bool DoesExist(int customerNumber)                
+        {
+
+            if (customerNumber <= indexForArray)
+            {
+                int i = 0;
+                while (i <= indexForArray)
+                {
+                    if (custArray[i].CurrCustomerNum == customerNumber)
+                    {
+                        return true;
+                    }                   
+                    i++;
+                }                               
+            }            
+            return false;
         }
 
     }

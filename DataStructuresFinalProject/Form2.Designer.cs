@@ -29,7 +29,6 @@ namespace DataStructuresFinalProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.ShipperCompanyNametextBox = new System.Windows.Forms.TextBox();
             this.AddAShipperLabel = new System.Windows.Forms.Label();
             this.ShipperCompanyNameLabel = new System.Windows.Forms.Label();
@@ -75,24 +74,23 @@ namespace DataStructuresFinalProject
             this.FreightIDNumberlabel = new System.Windows.Forms.Label();
             this.FreightIDNumbertextBox = new System.Windows.Forms.TextBox();
             this.SubmitFreightInfobutton = new System.Windows.Forms.Button();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ShipperStatecomboBox = new System.Windows.Forms.ComboBox();
             this.ConsigneeStatecomboBox = new System.Windows.Forms.ComboBox();
             this.HandelingUnitTypelabel = new System.Windows.Forms.Label();
             this.HangelingUnitTypecomboBox = new System.Windows.Forms.ComboBox();
             this.GoBackButtonbutton = new System.Windows.Forms.Button();
+            this.PrioritycomboBox = new System.Windows.Forms.ComboBox();
+            this.Prioritylabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.HUnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WeightInPoundsnumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ShipperCompanyNametextBox
             // 
-            this.ShipperCompanyNametextBox.Location = new System.Drawing.Point(54, 86);
+            this.ShipperCompanyNametextBox.Location = new System.Drawing.Point(54, 136);
             this.ShipperCompanyNametextBox.Name = "ShipperCompanyNametextBox";
             this.ShipperCompanyNametextBox.Size = new System.Drawing.Size(279, 23);
-            this.ShipperCompanyNametextBox.TabIndex = 0;
-            this.ShipperCompanyNametextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.ShipperCompanyNametextBox.TabIndex = 3;
             // 
             // AddAShipperLabel
             // 
@@ -107,7 +105,7 @@ namespace DataStructuresFinalProject
             // ShipperCompanyNameLabel
             // 
             this.ShipperCompanyNameLabel.AutoSize = true;
-            this.ShipperCompanyNameLabel.Location = new System.Drawing.Point(54, 68);
+            this.ShipperCompanyNameLabel.Location = new System.Drawing.Point(54, 118);
             this.ShipperCompanyNameLabel.Name = "ShipperCompanyNameLabel";
             this.ShipperCompanyNameLabel.Size = new System.Drawing.Size(131, 15);
             this.ShipperCompanyNameLabel.TabIndex = 2;
@@ -116,7 +114,7 @@ namespace DataStructuresFinalProject
             // ShipperAddressLN1Label
             // 
             this.ShipperAddressLN1Label.AutoSize = true;
-            this.ShipperAddressLN1Label.Location = new System.Drawing.Point(54, 112);
+            this.ShipperAddressLN1Label.Location = new System.Drawing.Point(54, 162);
             this.ShipperAddressLN1Label.Name = "ShipperAddressLN1Label";
             this.ShipperAddressLN1Label.Size = new System.Drawing.Size(68, 15);
             this.ShipperAddressLN1Label.TabIndex = 3;
@@ -124,22 +122,22 @@ namespace DataStructuresFinalProject
             // 
             // ShipperAddressLN1textBox
             // 
-            this.ShipperAddressLN1textBox.Location = new System.Drawing.Point(54, 130);
+            this.ShipperAddressLN1textBox.Location = new System.Drawing.Point(54, 180);
             this.ShipperAddressLN1textBox.Name = "ShipperAddressLN1textBox";
             this.ShipperAddressLN1textBox.Size = new System.Drawing.Size(279, 23);
             this.ShipperAddressLN1textBox.TabIndex = 4;
             // 
             // ShipperCitytextBox
             // 
-            this.ShipperCitytextBox.Location = new System.Drawing.Point(54, 177);
+            this.ShipperCitytextBox.Location = new System.Drawing.Point(54, 227);
             this.ShipperCitytextBox.Name = "ShipperCitytextBox";
             this.ShipperCitytextBox.Size = new System.Drawing.Size(279, 23);
-            this.ShipperCitytextBox.TabIndex = 6;
+            this.ShipperCitytextBox.TabIndex = 5;
             // 
             // ShipperCityLabel
             // 
             this.ShipperCityLabel.AutoSize = true;
-            this.ShipperCityLabel.Location = new System.Drawing.Point(54, 159);
+            this.ShipperCityLabel.Location = new System.Drawing.Point(54, 209);
             this.ShipperCityLabel.Name = "ShipperCityLabel";
             this.ShipperCityLabel.Size = new System.Drawing.Size(28, 15);
             this.ShipperCityLabel.TabIndex = 5;
@@ -148,7 +146,7 @@ namespace DataStructuresFinalProject
             // ShipperStateLabel
             // 
             this.ShipperStateLabel.AutoSize = true;
-            this.ShipperStateLabel.Location = new System.Drawing.Point(54, 206);
+            this.ShipperStateLabel.Location = new System.Drawing.Point(54, 256);
             this.ShipperStateLabel.Name = "ShipperStateLabel";
             this.ShipperStateLabel.Size = new System.Drawing.Size(33, 15);
             this.ShipperStateLabel.TabIndex = 7;
@@ -156,15 +154,15 @@ namespace DataStructuresFinalProject
             // 
             // ShipperZipCodetextBox
             // 
-            this.ShipperZipCodetextBox.Location = new System.Drawing.Point(54, 271);
+            this.ShipperZipCodetextBox.Location = new System.Drawing.Point(54, 321);
             this.ShipperZipCodetextBox.Name = "ShipperZipCodetextBox";
             this.ShipperZipCodetextBox.Size = new System.Drawing.Size(131, 23);
-            this.ShipperZipCodetextBox.TabIndex = 10;
+            this.ShipperZipCodetextBox.TabIndex = 7;
             // 
             // ShipperZipCodeLabel
             // 
             this.ShipperZipCodeLabel.AutoSize = true;
-            this.ShipperZipCodeLabel.Location = new System.Drawing.Point(54, 253);
+            this.ShipperZipCodeLabel.Location = new System.Drawing.Point(54, 303);
             this.ShipperZipCodeLabel.Name = "ShipperZipCodeLabel";
             this.ShipperZipCodeLabel.Size = new System.Drawing.Size(58, 15);
             this.ShipperZipCodeLabel.TabIndex = 9;
@@ -174,7 +172,7 @@ namespace DataStructuresFinalProject
             // 
             this.SearchByShipperCustomerNumberLabel.AutoSize = true;
             this.SearchByShipperCustomerNumberLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SearchByShipperCustomerNumberLabel.Location = new System.Drawing.Point(54, 297);
+            this.SearchByShipperCustomerNumberLabel.Location = new System.Drawing.Point(54, 63);
             this.SearchByShipperCustomerNumberLabel.Name = "SearchByShipperCustomerNumberLabel";
             this.SearchByShipperCustomerNumberLabel.Size = new System.Drawing.Size(213, 21);
             this.SearchByShipperCustomerNumberLabel.TabIndex = 11;
@@ -182,14 +180,14 @@ namespace DataStructuresFinalProject
             // 
             // ShipperCustomerNumberSearchtextBox
             // 
-            this.ShipperCustomerNumberSearchtextBox.Location = new System.Drawing.Point(54, 321);
+            this.ShipperCustomerNumberSearchtextBox.Location = new System.Drawing.Point(54, 87);
             this.ShipperCustomerNumberSearchtextBox.Name = "ShipperCustomerNumberSearchtextBox";
             this.ShipperCustomerNumberSearchtextBox.Size = new System.Drawing.Size(101, 23);
-            this.ShipperCustomerNumberSearchtextBox.TabIndex = 12;
+            this.ShipperCustomerNumberSearchtextBox.TabIndex = 1;
             // 
             // ShipperCustomerNumberSearchButton
             // 
-            this.ShipperCustomerNumberSearchButton.Location = new System.Drawing.Point(175, 321);
+            this.ShipperCustomerNumberSearchButton.Location = new System.Drawing.Point(175, 87);
             this.ShipperCustomerNumberSearchButton.Name = "ShipperCustomerNumberSearchButton";
             this.ShipperCustomerNumberSearchButton.Size = new System.Drawing.Size(102, 23);
             this.ShipperCustomerNumberSearchButton.TabIndex = 13;
@@ -199,7 +197,7 @@ namespace DataStructuresFinalProject
             // 
             // ConsigneeCustomerNumberSearchButton
             // 
-            this.ConsigneeCustomerNumberSearchButton.Location = new System.Drawing.Point(677, 321);
+            this.ConsigneeCustomerNumberSearchButton.Location = new System.Drawing.Point(677, 87);
             this.ConsigneeCustomerNumberSearchButton.Name = "ConsigneeCustomerNumberSearchButton";
             this.ConsigneeCustomerNumberSearchButton.Size = new System.Drawing.Size(102, 23);
             this.ConsigneeCustomerNumberSearchButton.TabIndex = 27;
@@ -209,16 +207,16 @@ namespace DataStructuresFinalProject
             // 
             // ConsigneeCustomerNumberSearchtextBox
             // 
-            this.ConsigneeCustomerNumberSearchtextBox.Location = new System.Drawing.Point(556, 321);
+            this.ConsigneeCustomerNumberSearchtextBox.Location = new System.Drawing.Point(556, 87);
             this.ConsigneeCustomerNumberSearchtextBox.Name = "ConsigneeCustomerNumberSearchtextBox";
             this.ConsigneeCustomerNumberSearchtextBox.Size = new System.Drawing.Size(101, 23);
-            this.ConsigneeCustomerNumberSearchtextBox.TabIndex = 26;
+            this.ConsigneeCustomerNumberSearchtextBox.TabIndex = 2;
             // 
             // SearchByConsigneeCustomerNumberLabel
             // 
             this.SearchByConsigneeCustomerNumberLabel.AutoSize = true;
             this.SearchByConsigneeCustomerNumberLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SearchByConsigneeCustomerNumberLabel.Location = new System.Drawing.Point(556, 297);
+            this.SearchByConsigneeCustomerNumberLabel.Location = new System.Drawing.Point(556, 63);
             this.SearchByConsigneeCustomerNumberLabel.Name = "SearchByConsigneeCustomerNumberLabel";
             this.SearchByConsigneeCustomerNumberLabel.Size = new System.Drawing.Size(213, 21);
             this.SearchByConsigneeCustomerNumberLabel.TabIndex = 25;
@@ -226,15 +224,15 @@ namespace DataStructuresFinalProject
             // 
             // ConsigneeZipCodetextBox
             // 
-            this.ConsigneeZipCodetextBox.Location = new System.Drawing.Point(556, 271);
+            this.ConsigneeZipCodetextBox.Location = new System.Drawing.Point(556, 321);
             this.ConsigneeZipCodetextBox.Name = "ConsigneeZipCodetextBox";
             this.ConsigneeZipCodetextBox.Size = new System.Drawing.Size(131, 23);
-            this.ConsigneeZipCodetextBox.TabIndex = 24;
+            this.ConsigneeZipCodetextBox.TabIndex = 13;
             // 
             // ConsigneeZipCodeLabel
             // 
             this.ConsigneeZipCodeLabel.AutoSize = true;
-            this.ConsigneeZipCodeLabel.Location = new System.Drawing.Point(556, 253);
+            this.ConsigneeZipCodeLabel.Location = new System.Drawing.Point(556, 303);
             this.ConsigneeZipCodeLabel.Name = "ConsigneeZipCodeLabel";
             this.ConsigneeZipCodeLabel.Size = new System.Drawing.Size(58, 15);
             this.ConsigneeZipCodeLabel.TabIndex = 23;
@@ -243,7 +241,7 @@ namespace DataStructuresFinalProject
             // ConsigneeStateLabel
             // 
             this.ConsigneeStateLabel.AutoSize = true;
-            this.ConsigneeStateLabel.Location = new System.Drawing.Point(556, 206);
+            this.ConsigneeStateLabel.Location = new System.Drawing.Point(556, 256);
             this.ConsigneeStateLabel.Name = "ConsigneeStateLabel";
             this.ConsigneeStateLabel.Size = new System.Drawing.Size(33, 15);
             this.ConsigneeStateLabel.TabIndex = 21;
@@ -251,15 +249,15 @@ namespace DataStructuresFinalProject
             // 
             // ConsigneeCitytextBox
             // 
-            this.ConsigneeCitytextBox.Location = new System.Drawing.Point(556, 177);
+            this.ConsigneeCitytextBox.Location = new System.Drawing.Point(556, 227);
             this.ConsigneeCitytextBox.Name = "ConsigneeCitytextBox";
             this.ConsigneeCitytextBox.Size = new System.Drawing.Size(279, 23);
-            this.ConsigneeCitytextBox.TabIndex = 20;
+            this.ConsigneeCitytextBox.TabIndex = 11;
             // 
             // ConsigneeCityLabel
             // 
             this.ConsigneeCityLabel.AutoSize = true;
-            this.ConsigneeCityLabel.Location = new System.Drawing.Point(556, 159);
+            this.ConsigneeCityLabel.Location = new System.Drawing.Point(556, 209);
             this.ConsigneeCityLabel.Name = "ConsigneeCityLabel";
             this.ConsigneeCityLabel.Size = new System.Drawing.Size(28, 15);
             this.ConsigneeCityLabel.TabIndex = 19;
@@ -267,15 +265,15 @@ namespace DataStructuresFinalProject
             // 
             // ConsigneeAddressLN1textBox
             // 
-            this.ConsigneeAddressLN1textBox.Location = new System.Drawing.Point(556, 130);
+            this.ConsigneeAddressLN1textBox.Location = new System.Drawing.Point(556, 180);
             this.ConsigneeAddressLN1textBox.Name = "ConsigneeAddressLN1textBox";
             this.ConsigneeAddressLN1textBox.Size = new System.Drawing.Size(279, 23);
-            this.ConsigneeAddressLN1textBox.TabIndex = 18;
+            this.ConsigneeAddressLN1textBox.TabIndex = 10;
             // 
             // ConsigneeAddressLN1Label
             // 
             this.ConsigneeAddressLN1Label.AutoSize = true;
-            this.ConsigneeAddressLN1Label.Location = new System.Drawing.Point(556, 112);
+            this.ConsigneeAddressLN1Label.Location = new System.Drawing.Point(556, 162);
             this.ConsigneeAddressLN1Label.Name = "ConsigneeAddressLN1Label";
             this.ConsigneeAddressLN1Label.Size = new System.Drawing.Size(68, 15);
             this.ConsigneeAddressLN1Label.TabIndex = 17;
@@ -284,7 +282,7 @@ namespace DataStructuresFinalProject
             // ConsigneeCompanyNameLabel
             // 
             this.ConsigneeCompanyNameLabel.AutoSize = true;
-            this.ConsigneeCompanyNameLabel.Location = new System.Drawing.Point(556, 68);
+            this.ConsigneeCompanyNameLabel.Location = new System.Drawing.Point(556, 118);
             this.ConsigneeCompanyNameLabel.Name = "ConsigneeCompanyNameLabel";
             this.ConsigneeCompanyNameLabel.Size = new System.Drawing.Size(131, 15);
             this.ConsigneeCompanyNameLabel.TabIndex = 16;
@@ -302,17 +300,17 @@ namespace DataStructuresFinalProject
             // 
             // ConsigneeCompanyNametextBox
             // 
-            this.ConsigneeCompanyNametextBox.Location = new System.Drawing.Point(556, 86);
+            this.ConsigneeCompanyNametextBox.Location = new System.Drawing.Point(556, 136);
             this.ConsigneeCompanyNametextBox.Name = "ConsigneeCompanyNametextBox";
             this.ConsigneeCompanyNametextBox.Size = new System.Drawing.Size(279, 23);
-            this.ConsigneeCompanyNametextBox.TabIndex = 14;
+            this.ConsigneeCompanyNametextBox.TabIndex = 9;
             // 
             // SubmitShipperInfoButton
             // 
             this.SubmitShipperInfoButton.Location = new System.Drawing.Point(54, 363);
             this.SubmitShipperInfoButton.Name = "SubmitShipperInfoButton";
             this.SubmitShipperInfoButton.Size = new System.Drawing.Size(186, 23);
-            this.SubmitShipperInfoButton.TabIndex = 28;
+            this.SubmitShipperInfoButton.TabIndex = 8;
             this.SubmitShipperInfoButton.Text = "Submit Shipper Information";
             this.SubmitShipperInfoButton.UseVisualStyleBackColor = true;
             this.SubmitShipperInfoButton.Click += new System.EventHandler(this.SubmitShipperInfoButton_Click);
@@ -322,7 +320,7 @@ namespace DataStructuresFinalProject
             this.SubmitConsigneeInfoButton.Location = new System.Drawing.Point(556, 363);
             this.SubmitConsigneeInfoButton.Name = "SubmitConsigneeInfoButton";
             this.SubmitConsigneeInfoButton.Size = new System.Drawing.Size(186, 23);
-            this.SubmitConsigneeInfoButton.TabIndex = 29;
+            this.SubmitConsigneeInfoButton.TabIndex = 14;
             this.SubmitConsigneeInfoButton.Text = "Submit Consignee Information";
             this.SubmitConsigneeInfoButton.UseVisualStyleBackColor = true;
             this.SubmitConsigneeInfoButton.Click += new System.EventHandler(this.SubmitConsigneeInfoButton_Click);
@@ -374,7 +372,7 @@ namespace DataStructuresFinalProject
             // FreightDescriptionlabel
             // 
             this.FreightDescriptionlabel.AutoSize = true;
-            this.FreightDescriptionlabel.Location = new System.Drawing.Point(54, 469);
+            this.FreightDescriptionlabel.Location = new System.Drawing.Point(54, 479);
             this.FreightDescriptionlabel.Name = "FreightDescriptionlabel";
             this.FreightDescriptionlabel.Size = new System.Drawing.Size(107, 15);
             this.FreightDescriptionlabel.TabIndex = 36;
@@ -408,12 +406,12 @@ namespace DataStructuresFinalProject
             // 
             // FreightDescriptiontextBox
             // 
-            this.FreightDescriptiontextBox.Location = new System.Drawing.Point(54, 487);
+            this.FreightDescriptiontextBox.Location = new System.Drawing.Point(54, 497);
             this.FreightDescriptiontextBox.MaxLength = 3276;
             this.FreightDescriptiontextBox.Multiline = true;
             this.FreightDescriptiontextBox.Name = "FreightDescriptiontextBox";
             this.FreightDescriptiontextBox.Size = new System.Drawing.Size(342, 113);
-            this.FreightDescriptiontextBox.TabIndex = 41;
+            this.FreightDescriptiontextBox.TabIndex = 15;
             // 
             // HUnumericUpDown
             // 
@@ -427,7 +425,7 @@ namespace DataStructuresFinalProject
             0});
             this.HUnumericUpDown.Name = "HUnumericUpDown";
             this.HUnumericUpDown.Size = new System.Drawing.Size(144, 19);
-            this.HUnumericUpDown.TabIndex = 42;
+            this.HUnumericUpDown.TabIndex = 17;
             // 
             // HazStatuscheckBox
             // 
@@ -436,10 +434,9 @@ namespace DataStructuresFinalProject
             this.HazStatuscheckBox.Location = new System.Drawing.Point(416, 446);
             this.HazStatuscheckBox.Name = "HazStatuscheckBox";
             this.HazStatuscheckBox.Size = new System.Drawing.Size(187, 25);
-            this.HazStatuscheckBox.TabIndex = 43;
+            this.HazStatuscheckBox.TabIndex = 16;
             this.HazStatuscheckBox.Text = "Hazmat? (Check = yes)";
             this.HazStatuscheckBox.UseVisualStyleBackColor = true;
-            this.HazStatuscheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // WeightInPoundsnumericUpDown
             // 
@@ -453,7 +450,7 @@ namespace DataStructuresFinalProject
             0});
             this.WeightInPoundsnumericUpDown.Name = "WeightInPoundsnumericUpDown";
             this.WeightInPoundsnumericUpDown.Size = new System.Drawing.Size(144, 19);
-            this.WeightInPoundsnumericUpDown.TabIndex = 45;
+            this.WeightInPoundsnumericUpDown.TabIndex = 19;
             this.WeightInPoundsnumericUpDown.ValueChanged += new System.EventHandler(this.WeightInPoundsnumericUpDown_ValueChanged);
             // 
             // WeightInPoundslabel
@@ -489,14 +486,10 @@ namespace DataStructuresFinalProject
             this.SubmitFreightInfobutton.Location = new System.Drawing.Point(682, 469);
             this.SubmitFreightInfobutton.Name = "SubmitFreightInfobutton";
             this.SubmitFreightInfobutton.Size = new System.Drawing.Size(230, 54);
-            this.SubmitFreightInfobutton.TabIndex = 48;
+            this.SubmitFreightInfobutton.TabIndex = 20;
             this.SubmitFreightInfobutton.Text = "Submit";
             this.SubmitFreightInfobutton.UseVisualStyleBackColor = true;
             this.SubmitFreightInfobutton.Click += new System.EventHandler(this.SubmitFreightInfobutton_Click);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // ShipperStatecomboBox
             // 
@@ -552,10 +545,10 @@ namespace DataStructuresFinalProject
             "WV",
             "WI",
             "WY"});
-            this.ShipperStatecomboBox.Location = new System.Drawing.Point(54, 224);
+            this.ShipperStatecomboBox.Location = new System.Drawing.Point(54, 274);
             this.ShipperStatecomboBox.Name = "ShipperStatecomboBox";
             this.ShipperStatecomboBox.Size = new System.Drawing.Size(121, 23);
-            this.ShipperStatecomboBox.TabIndex = 51;
+            this.ShipperStatecomboBox.TabIndex = 6;
             // 
             // ConsigneeStatecomboBox
             // 
@@ -610,10 +603,10 @@ namespace DataStructuresFinalProject
             "WV",
             "WI",
             "WY"});
-            this.ConsigneeStatecomboBox.Location = new System.Drawing.Point(556, 224);
+            this.ConsigneeStatecomboBox.Location = new System.Drawing.Point(556, 274);
             this.ConsigneeStatecomboBox.Name = "ConsigneeStatecomboBox";
             this.ConsigneeStatecomboBox.Size = new System.Drawing.Size(121, 23);
-            this.ConsigneeStatecomboBox.TabIndex = 52;
+            this.ConsigneeStatecomboBox.TabIndex = 12;
             // 
             // HandelingUnitTypelabel
             // 
@@ -638,23 +631,45 @@ namespace DataStructuresFinalProject
             this.HangelingUnitTypecomboBox.Location = new System.Drawing.Point(416, 533);
             this.HangelingUnitTypecomboBox.Name = "HangelingUnitTypecomboBox";
             this.HangelingUnitTypecomboBox.Size = new System.Drawing.Size(121, 23);
-            this.HangelingUnitTypecomboBox.TabIndex = 54;
+            this.HangelingUnitTypecomboBox.TabIndex = 18;
             // 
             // GoBackButtonbutton
             // 
             this.GoBackButtonbutton.Location = new System.Drawing.Point(722, 637);
             this.GoBackButtonbutton.Name = "GoBackButtonbutton";
             this.GoBackButtonbutton.Size = new System.Drawing.Size(208, 32);
-            this.GoBackButtonbutton.TabIndex = 55;
+            this.GoBackButtonbutton.TabIndex = 21;
             this.GoBackButtonbutton.Text = "Go Back";
             this.GoBackButtonbutton.UseVisualStyleBackColor = true;
             this.GoBackButtonbutton.Click += new System.EventHandler(this.GoBackButtonbutton_Click);
+            // 
+            // PrioritycomboBox
+            // 
+            this.PrioritycomboBox.FormattingEnabled = true;
+            this.PrioritycomboBox.Items.AddRange(new object[] {
+            "Yes ",
+            "No "});
+            this.PrioritycomboBox.Location = new System.Drawing.Point(275, 465);
+            this.PrioritycomboBox.Name = "PrioritycomboBox";
+            this.PrioritycomboBox.Size = new System.Drawing.Size(121, 23);
+            this.PrioritycomboBox.TabIndex = 54;
+            // 
+            // Prioritylabel
+            // 
+            this.Prioritylabel.AutoSize = true;
+            this.Prioritylabel.Location = new System.Drawing.Point(275, 447);
+            this.Prioritylabel.Name = "Prioritylabel";
+            this.Prioritylabel.Size = new System.Drawing.Size(53, 15);
+            this.Prioritylabel.TabIndex = 55;
+            this.Prioritylabel.Text = "Priority? ";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 690);
+            this.Controls.Add(this.PrioritycomboBox);
+            this.Controls.Add(this.Prioritylabel);
             this.Controls.Add(this.GoBackButtonbutton);
             this.Controls.Add(this.HangelingUnitTypecomboBox);
             this.Controls.Add(this.HandelingUnitTypelabel);
@@ -711,7 +726,6 @@ namespace DataStructuresFinalProject
             this.Text = "Add Freight To System";
             ((System.ComponentModel.ISupportInitialize)(this.HUnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WeightInPoundsnumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -764,11 +778,12 @@ namespace DataStructuresFinalProject
         private System.Windows.Forms.Label FreightIDNumberlabel;
         private System.Windows.Forms.TextBox FreightIDNumbertextBox;
         private System.Windows.Forms.Button SubmitFreightInfobutton;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ComboBox ShipperStatecomboBox;
         private System.Windows.Forms.ComboBox ConsigneeStatecomboBox;
         private System.Windows.Forms.ComboBox HangelingUnitTypecomboBox;
         private System.Windows.Forms.Label HandelingUnitTypelabel;
         private System.Windows.Forms.Button GoBackButtonbutton;
+        private System.Windows.Forms.ComboBox PrioritycomboBox;
+        private System.Windows.Forms.Label Prioritylabel;
     }
 }

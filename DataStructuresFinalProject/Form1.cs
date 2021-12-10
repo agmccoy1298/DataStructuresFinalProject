@@ -12,6 +12,8 @@ namespace DataStructuresFinalProject
 {
     public partial class Form1 : Form
     {
+        public PackingList HomePageClass { get; set; }
+        public PriorityQueue HomePagePriorityQueue { get; set; }        
         public Form1()
         {
             InitializeComponent();
@@ -21,30 +23,24 @@ namespace DataStructuresFinalProject
         {
             this.Hide();
             Form2 addForm = new Form2();//instanciation
+            //addForm.packingListObjectsForms = HomePageClass;
             addForm.Show();            
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void buttonSearch_Click_1(object sender, EventArgs e)
         {
             if (PackingList.Size == 0)
             {
                 MessageBox.Show("You do not have any freight added to the system. Please add freight first.");
-            }else
-            {
+            }
+            else
+            {                
                 this.Hide();
                 Form3 searchForm = new Form3();
+                searchForm.MySearchClass = HomePageClass;
                 searchForm.Show(); 
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void buttonTerminate_Click(object sender, EventArgs e)
@@ -60,6 +56,20 @@ namespace DataStructuresFinalProject
         {
             PackingList mypackingList = new PackingList();
             mypackingList.IDNumbers();               
+        }
+
+        private void ShowPriorityQueueButton_Click(object sender, EventArgs e)
+        {
+            string tempString;
+            if (PackingList.Size == 0)
+            {
+                tempString = "There is no freight added";
+                PriorityFreightQueuetextBox.Text = tempString;
+            }
+            else
+            {
+                PriorityFreightQueuetextBox.Text = HomePagePriorityQueue.DisplayQueue();
+            }
         }
     }
 }
